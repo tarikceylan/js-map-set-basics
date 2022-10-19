@@ -48,7 +48,7 @@ map.set('1', 'str1').set(1, 'num1').set(true, 'bool1');
 - `map.keys()` returns an iterable for keys
 
 ```javascript
-let keyIterable = map.keys();
+let keyIterable = myMap.keys();
 for (key of keyIterable) {
   console.log(key); //logs keys of the map to the console
 }
@@ -68,6 +68,14 @@ for (value of valuesIterable) {
 ```javascript
 let pairsIterable = myMap.entries();
 for (pairs of pairsIterable) {
-  console.log(pairs);
+  console.log(pairs); //logs key-value paris of the map to the console
 }
+```
+
+- Map also has a `forEach` method, similar to `Array`
+
+```javascript
+myMap.forEach((value, key, map) => {
+  console.log(`Value: ${value}, Key: ${key}, Map: ${map}`);
+});
 ```
