@@ -26,3 +26,30 @@ myMap.clear();
 
 //.size property returns the current element count in the map
 myMap.size;
+
+//.set(key, value) method is chainable since .set() method returns the Map itself
+myMap
+  .set('firstName', 'John')
+  .set(1, 'One')
+  .set('Meaning Of Life', 42)
+  .set('isMale', true);
+
+//ITERATION OVER A MAP
+
+//map.keys() returns an iterable for keys
+let keyIterable = myMap.keys();
+for (key of keyIterable) {
+  console.log(key);
+}
+
+//map.values() returns an iterable for keys
+let valuesIterable = myMap.values();
+for (value of valuesIterable) {
+  console.log(value);
+}
+
+//map.entries() returns an iterable for key-value pairs
+let pairsIterable = myMap.entries();
+for (pairs of pairsIterable) {
+  console.log(pairs);
+}
