@@ -63,7 +63,7 @@ for (value of valuesIterable) {
 }
 ```
 
-- `map.entries` returns in iterable for key-value pairs
+- `map.entries()` returns in iterable for key-value pairs
 
 ```javascript
 let pairsIterable = myMap.entries();
@@ -72,10 +72,12 @@ for (pairs of pairsIterable) {
 }
 ```
 
-- Map also has a `forEach` method, similar to `Array`
+- Map also has a `forEach()` method, similar to `Array`
 
 ```javascript
 myMap.forEach((value, key, map) => {
   console.log(`Value: ${value}, Key: ${key}, Map: ${map}`);
 });
 ```
+
+<!-- // TODO: Map from Object, Object From Map, Sets -->
