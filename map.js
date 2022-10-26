@@ -56,7 +56,7 @@ for (pairs of pairsIterable) {
 
 //Maps also has forEach function like Arrays
 myMap.forEach((value, key, map) => {
-  console.log(`Value: ${value}, Key: ${key}, Map: ${map}`);
+  console.log(`Value: ${value}, Key: ${key}`);
 });
 
 //Creating a Map from Object
