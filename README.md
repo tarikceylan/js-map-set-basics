@@ -94,3 +94,21 @@ const mapFromObj = new Map(Object.entries(tempObj));
 console.log(mapFromObj); //logs the Map structure
 console.log(`New Map Created from an Object: ${mapFromObj}`);
 ```
+
+### Creating Object From A Map
+
+We know that `Map` has `.entries()` method which returns iterable key-value pairs and which can bu used as the argument for built-in `Object.fromEntries()` method. That way, we can create an `Object` from an existing `Map`
+
+```javascript
+const objFromMap = Object.fromEntries(myMap.entries());
+console.log(objFromMap);
+console.log(`New Object Created From A Map: ${objFromMap}`);
+```
+
+We can also use map itself without `.entries()` method. `.fromEntries()` expect an iterable object as the argument and standart call for `Map` itself returns same key-value pairs as `.entries()` method.
+
+```javascript
+const objFromMap2 = Object.fromEntries(myMap);
+console.log(objFromMap2);
+console.log(`New Object Created From A Map: ${objFromMap2}`);
+```
