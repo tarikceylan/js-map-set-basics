@@ -1,7 +1,7 @@
 # JavaScript Map & Set
 
 This is a personal JavaScript Map & Set study repository.  
-For more info about Map & Set, visit [Map and Set](https://javascript.info/map-set)
+For more information about Map & Set, visit [Map and Set](https://javascript.info/map-set)
 
 ## Map
 
