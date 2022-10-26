@@ -59,7 +59,7 @@ myMap.forEach((value, key, map) => {
   console.log(`Value: ${value}, Key: ${key}`);
 });
 
-//Creating a Map from Object
+//Creating Map from An Object
 //Object.entries()
 let tempObj = {
   firstName: 'Jane',

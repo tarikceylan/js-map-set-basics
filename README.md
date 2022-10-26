@@ -80,7 +80,7 @@ myMap.forEach((value, key, map) => {
 });
 ```
 
-### Creating Map From Object
+### Creating Map From An Object
 
 When we create a `Map` we can pass an iterable with key-value pairs. We can create a `Map` from an `Object` using `Object.entries()` built-in method which returns an array of key-value pairs exactly in the iterable type (an array in this case) we need.
 
