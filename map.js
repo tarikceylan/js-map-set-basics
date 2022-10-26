@@ -60,3 +60,12 @@ myMap.forEach((value, key, map) => {
 });
 
 //Creating a Map from Object
+//Object.entries()
+let tempObj = {
+  firstName: 'Jane',
+  age: 60,
+};
+
+const mapFromObj = new Map(Object.entries(tempObj));
+console.log(mapFromObj);
+console.log(`New Map Created from an Object: ${mapFromObj}`);

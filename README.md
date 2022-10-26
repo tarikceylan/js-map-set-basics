@@ -4,7 +4,7 @@ This is a personal JavaScript Map & Set study repository. For more info about Ma
 
 ## Map
 
-**Map** is a collection of key-value pairs, just like an **Object**. The main difference is that **Map** allows **keys of any type**.
+`Map` is a collection of key-value pairs, just like an `Object`. The main difference is that `Map` allows **keys of any type**.
 
 ### JavaSript Map Methods & Properties
 
@@ -72,7 +72,7 @@ for (pairs of pairsIterable) {
 }
 ```
 
-- Map also has a `forEach()` method, similar to `Array`
+- `Map` also has a `forEach()` method, similar to `Array`
 
 ```javascript
 myMap.forEach((value, key, map) => {
@@ -80,4 +80,17 @@ myMap.forEach((value, key, map) => {
 });
 ```
 
-<!-- // TODO: Map from Object, Object From Map, Sets -->
+### Creating Map From Object
+
+When we create a `Map` we can pass an iterable with key-value pairs. We can create a `Map` from an `Object` using `Object.entries()` built-in method which returns an array of key-value pairs exactly in the iterable type (an array in this case) we need.
+
+```javascript
+let tempObj = {
+  firstName: 'Jane',
+  age: 60,
+};
+
+const mapFromObj = new Map(Object.entries(tempObj));
+console.log(mapFromObj); //logs the Map structure
+console.log(`New Map Created from an Object: ${mapFromObj}`);
+```
