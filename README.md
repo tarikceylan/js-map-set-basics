@@ -1,16 +1,5 @@
 # JavaScript Map & Set
 
-##### Table of Content
-
-[1. Map](https://github.com/tarikceylan/js-map-set-basics#map)
-1.1 JavaScript Map Methods & Properties
-1.2 Objects As Keys In Map
-1.3 Chaining
-1.4 Iteration Over Maps
-1.5 Creating Map From An Object \* 1.6 Creating Object From A Map
-
-[2. Set](https://github.com/tarikceylan/js-map-set-basics#set)
-
 This is a personal JavaScript Map & Set study repository. For more info about Map & Set, visit [Map and Set](https://javascript.info/map-set)
 This is a personal JavaScript Map & Set study repository. For more info about Map & Set, visit [JavaScript.info - Map and Set](https://javascript.info/map-set)
 
