@@ -176,6 +176,10 @@ mySet.values(); //returns iterable object
 
 - `.entries()` method returns an iterable object for entries `[value, value]`, for compatibility with `Map`
 
+```javascript
+mySet.entries(); //returns iterable object
+```
+
 ### Iteration Over A Set
 
 We can loop over a `Set` either with a `for..of` loop or using `forEach` method.
