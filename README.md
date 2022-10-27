@@ -7,7 +7,7 @@ For more information about Map & Set, visit [Map and Set](https://javascript.inf
 
 `Map` is a collection of key-value pairs, just like an `Object`. The main difference is that `Map` allows **keys of any type**.
 
-### JavaSript Map Methods & Properties
+### Map Methods & Properties
 
 - `.set(key, value)` method inserts given key-value pair into created `Map`
 
@@ -115,3 +115,82 @@ console.log(`New Object Created From A Map: ${objFromMap2}`);
 ```
 
 ## Set
+
+`Set` is a collection type without keys where each value may occur only once and can be any type.
+
+### Set Methods & Properties
+
+- `.add(value)` method adds a value and returns the `Set` itself
+
+```javascript
+const myNum = 42;
+const isAlive = true;
+const john = { name: 'John' };
+const cities = ['Paris', 'Sydney', 'Madrid', 'Istanbul'];
+
+mySet.add(myNum);
+mySet.add(isAlive);
+mySet.add(john);
+mySet.add(cities);
+
+console.log(mySet);
+```
+
+- `.delete(value)` method removes the given value returns `true` if value was found.
+
+```javascript
+mySet.delete(cities);
+
+console.log(mySet); //returns the set without cities array
+```
+
+- `.has(value)` method returns true if the set has the given value
+
+```javascript
+mySet.has(myNum); //returns true
+```
+
+- `.clear()` method removes all elements from the `Set`
+
+```javascript
+mySet.clear();
+```
+
+- `.size` property returns the total count of elements in the `Set`
+
+```javascript
+mySet.size; //returns 4 (for our set at the beginning)
+```
+
+- `.keys()` method returns an iterable object for values
+
+```javascript
+mySet.keys(); //returns iterable object
+```
+
+- `.values()` method is same as `.keys()` method, for compatibility with `Map`
+
+```javascript
+mySet.values(); //returns iterable object
+```
+
+- `.entries()` method returns an iterable object for entries `[value, value]`, for compatibility with `Map`
+
+### Iteration Over A Set
+
+We can loop over a `Set` either with a `for..of` loop or using `forEach` method.
+
+- Using `for..of`
+
+```javascript
+//for..of
+for (let value of mySet) {
+  console.log(value);
+}
+```
+
+- Using `forEach`
+
+```javascript
+mySet.forEach((value) => console.log(value));
+```
